@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <title>Deeper, Broader and Artier Domain Generalization</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Da">
+    <meta name="author" content="Da">
+    <meta name="keywords" content="Da Li, qmul, Computer Vision">
+    <!-- Le styles -->
+    <link href="bootstrap.css" rel="stylesheet">
+
+    <style>
+        body {
+            padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
+        }
+    </style>
+    <link href="bootstrap-responsive.css" rel="stylesheet">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le fav and touch icons -->
+    <link rel="shortcut icon" href="http://www.eecs.qmul.ac.uk/assets/ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144"
+          href="http://www.eecs.qmul.ac.uk/assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114"
+          href="http://www.eecs.qmul.ac.uk/assets/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72"
+          href="http://www.eecs.qmul.ac.uk/assets/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed"
+          href="http://www.eecs.qmul.ac.uk/assets/ico/apple-touch-icon-57-precomposed.png">
+</head>
+
+<body>
+<div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="navbar-inner">
+        <div class="container">
+            <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </a>
+            <div class="nav-collapse collapse">
+                <ul class="nav">
+                    <li class="active"><a href="index.html"><strong>Home</strong></a></li>
+                    <!--	      <li class="active"><a href="http://sketchx.eecs.qmul.ac.uk/"><strong>SketchX</strong></a></li>-->
+                </ul>
+                <!--			<a href="http://www.qmul.ac.uk/" target="_blank"><img src="img/logo_QMUL.png" height="80" align="right" width="145"></a>-->
+            </div><!--/.nav-collapse -->
+        </div>
+    </div>
+</div>
+<div class="container">
+    <section>
+        <h1>Deeper, Broader and Artier Domain Generalization</h1>
+        <hr>
+        <br>
+        <br>
+        <div class="center-image" style="text-align:center">
+            <!--	                <img src="img/project_img1.png" alt="motivation" height="400" width="400" align="center">-->
+        </div>
+        <br>
+        <br>
+        <h2>Abstract</h2>
+        The problem of domain generalization is to learn from multiple training domains, and extract a domain-agnostic
+        model that can then be applied to an unseen domain. Domain generalization (DG) has a clear motivation in
+        contexts where there are target domains with distinct characteristics, yet sparse data for training. For example
+        recognition in sketch images, which are distinctly more abstract and rarer than photos. Nevertheless, DG methods
+        have primarily been evaluated on photo-only benchmarks focusing on alleviating the dataset bias where both
+        problems of domain distinctiveness and data sparsity can be minimal. We argue that these benchmarks are overly
+        straightforward, and show that simple deep learning baselines perform surprisingly well on them. </br>In this
+        paper, we make two main contributions: Firstly, we build upon the favorable domain shift-robust properties of
+        deep learning methods, and develop a low-rank parameterized CNN model for end-to-end DG learning. Secondly, we
+        develop a DG benchmark dataset covering photo, sketch, cartoon and painting domains. This is both more
+        practically relevant, and harder (bigger domain shift) than existing benchmarks. The results show that our
+        method outperforms existing DG alternatives, and our dataset provides a more significant DG challenge to drive
+        future research.
+        <br>
+        <br>
+        <h2>Download</h2>
+
+        You can download the dataset introduced in our ICCV paper.
+        <br>
+        <br>
+        <div class="Row" style="text-align:center">
+            </br>
+
+            <!--	      <div class="Column" style="text-align:center">-->
+            <!--		<h3>Paper</h3>-->
+            <!--		<a href="Doc/Publication/2017/deeper-broader-artier.pdf">-->
+            <!--&lt;!&ndash;		  <img class="img-responsive paper-thumbnail" src="img/paper.png" alt="paper thumbnail" height="200" width="200"/>&ndash;&gt;-->
+            <!--		  &lt;!&ndash;PDF (20MB)&ndash;&gt;-->
+            <!--		</a>-->
+            <!--	      </div>-->
+
+            <!--	      <div class="Column" style="text-align:center">-->
+            <!--		<h3>Code (coming soon)</h3>-->
+            <!--			<a href="">-->
+            <!--&lt;!&ndash;			  <img class="img-responsive paper-thumbnail" src="img/codes.png" alt="code thumbnail" height="150" width="150" />&ndash;&gt;-->
+            <!--			  &lt;!&ndash;Code (Coming soon)&ndash;&gt;-->
+            <!--			</a>-->
+            <!--	      </div>-->
+
+
+            <!--		<div class="Column" style="text-align:center">-->
+            <!--		<h3>Models</h3>-->
+            <!--			<a href="https://drive.google.com/open?id=0B6x7gtvErXgfcHhpTU1qbmZDVTA">-->
+            <!--			  <img class="img-responsive paper-thumbnail" src="img/models.png" alt="model thumbnail" height="300" width="300"/>-->
+            <!--			 &lt;!&ndash; Data (Coming Soon)&ndash;&gt;-->
+            <!--			</a>-->
+            <!--	      </div>-->
+
+        </div>
+
+        <div class="Row" style="text-align:center">
+            <div class="Column" style="text-align:center">
+                <h3>Dataset</h3>
+                <h1><font color="red">!!!Please use our official train-val splits of this dataset, which is included in
+                    the download page, otherwise you may get very different AGG results.</font></h1>
+                <a href="https://drive.google.com/open?id=0B6x7gtvErXgfUU1WcGY5SzdwZVk">
+                    <img class="img-responsive paper-thumbnail" src="img/pacs.png" alt="data thumbnail" height="450"
+                         width="450"/>
+                    <!-- Data (Coming Soon)-->
+                </a>
+            </div>
+            <!--
+                    <div class="Column" style="text-align:center">
+                    <h3>Within domain training loss (PT-AlexNet)</h3>
+                        Batch size=64, lr=5e-4.
+                                <img src="img/losses.png" alt="training" height="350" width="700" align="center">
+                    </div>
+            -->
+        </div>
+
+
+        <h2>BibTeX</h2>
+        If you think our dataset or pretrained model is useful for your research, please cite our paper. Thanks!
+        <!--<div class="row">-->
+        <pre>@inproceedings{Li2017dg,
+  			title={Deeper, Broader and Artier Domain Generalization},
+  			author={Li, Da and Yang, Yongxin and Song, Yi-Zhe and Hospedales, Timothy},
+  			booktitle={International Conference on Computer Vision},
+  			year={2017}
+		}</pre>
+
+        <!-- Footer ================================================== -->
+        <footer class="footer">
+            <p class="pull-right"><a href="#HOME">Back to top</a></p>
+            <p><small>Updated August 2017</small></p>
+            <p><small>Page created using <a href="http://twitter.github.com/bootstrap"
+                                            target="_blank">bootstrap</a></small></p>
+        </footer>
+
+</div> <!-- /container -->
+
+<!-- Le javascript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="css/bootstrap/js/jquery.js"></script>
+<script src="css/bootstrap/js/bootstrap-transition.js"></script>
+<script src="css/bootstrap/js/bootstrap-alert.js"></script>
+<script src="css/bootstrap/js/bootstrap-modal.js"></script>
+<script src="css/bootstrap/js/bootstrap-dropdown.js"></script>
+<script src="css/bootstrap/js/bootstrap-scrollspy.js"></script>
+<script src="css/bootstrap/js/bootstrap-tab.js"></script>
+<script src="css/bootstrap/js/bootstrap-tooltip.js"></script>
+<script src="css/bootstrap/js/bootstrap-popover.js"></script>
+<script src="css/bootstrap/js/bootstrap-button.js"></script>
+<script src="css/bootstrap/js/bootstrap-collapse.js"></script>
+<script src="css/bootstrap/js/bootstrap-carousel.js"></script>
+<script src="css/bootstrap/js/bootstrap-typeahead.js"></script>
+
+
+</body>
+</html>
