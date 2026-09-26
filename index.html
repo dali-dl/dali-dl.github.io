@@ -1,565 +1,197 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <title>Da Li - Samsung AI Centre Cambridge</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Da Li">
-    <meta name="author" content="Da Li">
-    <meta name="keywords" content="Da Li">
-    <!--Le styles -->
-    <link href="css/bootstrap/css/bootstrap.css" rel="stylesheet">
-
-    <style>
-        body {
-            padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
-            /*max-width: 1000px;*/
-            margin: auto;
-        }
-    </style>
-    <link href="css/bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
-
-    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
-    <!--[if lt IE 9]>
-    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Da Li is a researcher working on embodied AI and multimodal reasoning.">
+  <title>Da Li</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%231e4778'/%3E%3Ctext x='32' y='41' text-anchor='middle' font-family='Arial' font-size='28' font-weight='700' fill='white'%3EDL%3C/text%3E%3C/svg%3E">
 </head>
 
 <body>
+  <div class="page">
+    <nav>
+      <a class="name" href="#top">Da Li</a>
+      <div class="nav-links">
+        <a href="#research">Research</a>
+        <a href="#studentships">PhD opportunities</a>
+        <a href="#news">News</a>
+      </div>
+    </nav>
 
-<div class="navbar navbar-inverse navbar-fixed-top">
-    <div class="navbar-inner">
-        <div class="container">
-            <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-                <!--<span class="icon-bar"></span>-->
-                <!--<span class="icon-bar"></span>-->
-                <!--<span class="icon-bar"></span>-->
-            </a>
-            <div class="nav-collapse collapse" align="center">
-                <ul class="nav">
-                    <li class="active"><a href="#HOME"><strong>Home</strong></a></li>
-                    <li><a href="#ABOUT"><strong>About Me</strong></a></li>
-                    <li><a href="#NEWS"><strong>News</strong></a></li>
-<!--                    <li><a href="#EXPERIENCE"><strong>Experience</strong></a></li>-->
-                    <li><a href="#PUBLICATION"><strong>Publication</strong></a></li>
-                    <li><a href="#SERVICES"><strong>Services</strong></a></li>
-                </ul>
-                <a href="" target="_blank"><img align="right" height="30" width="100"
-                                                src="./img/samsung_blue.png"></a>
+    <main id="top">
+      <!-- EDIT YOUR INTRODUCTION HERE -->
+      <header class="intro">
+  <img
+    class="profile-image"
+    src="profile-DL.png"
+    alt="Portrait of Da Li"
+  >
 
-            </div><!--/.nav-collapse -->
-        </div>
+  <div class="intro-copy">
+    <h1>Da Li</h1>
+
+    <p class="role">
+      Associate Professor in AI at the University of York
+    </p>
+
+    <p>
+      My research interests include <strong>embodied AI</strong>,
+      <strong>world models</strong>, and
+      <strong>multimodal learning</strong>. My research aims to build
+      intelligent systems that can learn and adapt through interactions
+      with the physical world.
+    </p>
+
+    <p>
+      Previously, I was a Senior Research Scientist and Project Lead at
+      Samsung AI Center Cambridge. I received my doctoral training at
+      Queen Mary University of London (QMUL) and Surrey’s Centre for
+      Vision, Speech and Signal Processing (CVSSP).
+      Prior to moving to the UK, I worked as a Computer Vision Engineer
+      at West-well Lab (AI Unicorn) and a 3D Software Engineer at Autodesk R&amp;D.
+    </p>
+
+    <div class="profile-links">
+      <a
+        href="https://scholar.google.com/citations?user=RPvaE3oAAAAJ&hl=en"
+        target="_blank"
+        rel="noreferrer"
+      >
+        Google Scholar
+      </a>
+
+      <a href="mailto:dali.academic@gmail.com">Email</a>
+
+      <button
+        class="wechat-button"
+        type="button"
+        aria-controls="wechat-qr"
+        aria-expanded="false"
+        onclick="
+          const qr = document.getElementById('wechat-qr');
+          const visible = qr.classList.toggle('show');
+          this.setAttribute('aria-expanded', visible);
+        "
+      >
+        WeChat
+      </button>
     </div>
-</div>
-<div class="container">
-    <section id="HOME">
-        <div class="page-header">
-            <h1>Da Li (李达)</h1>
-        </div>
 
-        <div class="row-fluid">
-
-            <div class="span2">
-                <div class="thumbnail">
-                    <img src="./img/me.JPG">
-                </div>
-            </div>
-
-            <div class="span3">
-                <address>
-                    <P>Senior Research Scientist @ Samsung AI Centre, Cambridge</P>
-<!--                    <P>Visiting Researcher @ University of Edinburgh</P>-->
-                    E-mail: dali.academic(at)gmail.com<br/>
-                    <a href="https://scholar.google.co.uk/citations?user=RPvaE3oAAAAJ&hl=en">Google Scholar</a><br/>
-                </address>
-            </div>
-
-
-        </div>
-    </section>
-    <br/>
-
-    <section id="ABOUT">
-        <div class="page-header">
-            <h2>About Me
-                <small></small>
-            </h2>
-        </div>
-        <div class="row-fluid">
-
-            <p>
-                Da Li is a Senior Research Scientist within the Machine Learning and Data Intelligence group in <a
-                    href="https://research.samsung.com/aicenter_cambridge">Samsung AI Centre Cambridge</a>.
-            </p>
-
-            <p>
-                Before pursuing his doctoral training in the UK, Da worked
-                as a Software Engineer at <a href="https://www.autodesk.com/">Autodesk </a> China in Shanghai for
-                developing the 3D design software <a href="https://en.wikipedia.org/wiki/Autodesk_Inventor">Inventor</a>.
-            </p>
-
-            <!--            <p>Da's research interests span transfer learning, meta learning and semi-supervised learning.-->
-            </p>
-        </div>
-    </section>
-
-    <section id="NEWS">
-        <div class="page-header">
-            <h2>News
-                <small></small>
-            </h2>
-        </div>
-        <div class="row-fluid">
-            <ul>
-                <li><b>**Note**</b> Previous 'PACS' google drive link has expired due to google's security update.
-                    The
-                    <a href="https://drive.google.com/drive/folders/0B6x7gtvErXgfUU1WcGY5SzdwZVk?resourcekey=0-2fvpQY_QSyJf2uIECzqPuQ&usp=sharing">download
-                        link</a> is updated now.<br/>
-                <li><b>[01/2026]</b> One paper accepted in ICLR 2026!<br/>
-                <li><b>[11/2025]</b> Two papers accepted in AAAI 2026!<br/>
-                <li><b>[08/2025]</b> A paper of visual reasoning for VQA is accepted in TMLR 2025!<br/>
-                <li><b>[08/2025]</b> I will serve as an Area Chair in ICLR 2026!<br/>
-                <li><b>[01/2025]</b> ConceptPrune is accepted in ICLR 2025!<br/>
-                <li><b>[01/2025]</b> Finished my Area Chair job for ICLR 2025!<br/>
-                <li><b>[05/2024]</b> One paper about federated learning among heterogenous clients is accepted in ICML
-                    2024!<br/>
-                <li><b>[01/2024]</b> Our intern's work about "a hierarchical NAS for few shot learning" got accepted in
-                    ICLR 2024 as Oral!<br/>
-                <li><b>[09/2023]</b> Our intern's work "Better Practice DA" got Best Paper Award in AutoML 2023!<br/>
-                    <!--                <li><b>[06/2023]</b> Appointed as a Visiting Lecturer at CVSSP of Surrey!<br/>-->
-                    <!--                <li><b>[06/2023]</b> One paper about generalized FSL for segmentation is in TIP.<br/>-->
-                    <!--                <li><b>[05/2023]</b> Better practice for domain adaptation is accepted in AutoML 2023.<br/>-->
-                    <!--                <li><b>[03/2023]</b> Two papers accepted in CVPR 2023, including one highlight.<br/>-->
-                    <!--                <li><b>[01/2023]</b> Two papers accepted in ICLR 2023, including one spotlight.<br/>-->
-                    <!--                <li><b>[12/2022]</b> We are organizing the workshop <a href="https://domaingen.github.io/">"What do we-->
-                    <!--                    need for successful domain generalization?"</a>in ICLR23. Please see <a-->
-                    <!--                        href="https://domaingen.github.io/cfp">CFP</a>.<br/>-->
-                    <!--                <li><b>[10/2022]</b> Two Oral papers to appear in BMVC 2022.<br/>-->
-                    <!--                <li><b>[06/2022]</b> One paper accepted in TIP.<br/>-->
-                    <!--                <li><b>[05/2022]</b> One paper accepted in ICML 2022.<br/>-->
-                    <!--                <li><b>[03/2022]</b>-->
-                    <!--                    <del> We have one internship available in SAIC-Cambridge for Self-supervised Learning-->
-                    <!--                        or Federated Learning.-->
-                    <!--                        Please contact me if interested!!!-->
-                    <!--                    </del>-->
-                    <!--                    <br/>-->
-                    <!--                <li><b>[03/2022]</b> One paper accepted in CVPR 2022.<br/>-->
-                    <!--                <li><b>[11/2021]</b> One paper accepted in NeurIPS 2021 Datasets and Benchmarks track.<br/>-->
-                    <!--                <li><b>[10/2021]</b> Serving as a Senior Program Committee (SPC) member for AAAI-22.<br/>-->
-                    <!--                <li><b>[08/2021]</b> One paper proposing a simple feature augmentation for domain generalization is-->
-                    <!--                    accepted in ICCV 2021.<br/>-->
-                    <!--                <li><b>[05/2021]</b> One paper about adversarial robustness is accepted in ICML 2021. Congrats-->
-                    <!--                    Panagiotis!<br/>-->
-                    <!--                <li><b>[12/2020]</b> One paper about stochastic neural networks is accepted in AAAI 2021.<br/>-->
-                    <!--                <li><b>[10/2020]</b> One paper about sketch based photo segmenter generation is accepted in TIP.<br/>-->
-                    <!--                <li><b>[07/2020]</b> Our 'online Meta-DA for MSDA/SSDA' accepted in ECCV 2020.<br/>-->
-                    <!--                <li><b>[12/2019]</b> Code released for our ICCV'19 paper "Episodic DG". <br/>-->
-                    <!--                <li><b>[11/2019]</b> Code released for our ICCV'19 paper "Robust Person Re-identification". <br/>-->
-                    <!--                <li><b>[07/2019]</b> Two papers accepted in ICCV 2019, including one oral. <br/>-->
-                    <!--                <li><b>[07/2019]</b> Joined Machine Learning Group of SAIC-C as a Researcher working with Dr. Timothy-->
-                    <!--                    Hospedales. <br/>-->
-                    <!--                <li><b>[01/2019]</b> Joined SAIC-Cambridge as a Research Intern working with Prof. Tao Xiang.<br/>-->
-                    <!--                <li><b>[07/2018]</b> Our paper accepted in ECCV 2018.<br/>-->
-                    <!--                <li><b>[06/2018]</b> Code released for our AAAI 2018 paper "Meta DG".<br/>-->
-                    <!--                <li><b>[03/2018]</b> Our paper has been selected for the spotlight presentation in CVPR 2018.<br/>-->
-                    <!--                <li><b>[03/2018]</b> Awarded for the Rabin Ezra Scholarship.<br/>-->
-                    <!--                <li><b>[02/2018]</b> One recent paper will appear in CVPR 2018.<br/>-->
-                    <!--                <li><b>[11/2017]</b> One paper will appear in AAAI 2018.<br/>-->
-
-            </ul>
-
-        </div>
-    </section>
-
-    <!--    <section id="EXPERIENCE">-->
-    <!--        <div class="page-header">-->
-    <!--            <h2>Experience-->
-    <!--                <small></small>-->
-    <!--            </h2>-->
-    <!--        </div>-->
-    <!--        <div class="row-fluid">-->
-    <!--            <div class="span7">-->
-    <!--                <ul>-->
-    <!--                    <li>Senior Research Scientist, Samsung AI Center, Cambridge, UK. 2022/March-Present.<br/>-->
-    <!--                    <li>Research Scientist, Samsung AI Center, Cambridge, UK. 2019/July-2022/March.<br/>-->
-    <!--                    <li>Assistant Research Scientist, Samsung AI Center, Cambridge, UK. 2019/Jan-July.<br/>-->
-    <!--                        &lt;!&ndash;                    <li>Research Assistant, SketchX Lab (QMUL/CVSSP-Surrey), UK. 2016/Sept-2019/July.<br/>&ndash;&gt;-->
-    <!--                        &lt;!&ndash;                    <li>Computer Vision Engineer, Westwell-Lab, Shanghai, China. 2016/Feb-Aug.<br/>&ndash;&gt;-->
-    <!--                        &lt;!&ndash;                    <li>Software Engineer, Autodesk, Shanghai, China. 2014/July-2016/Feb.<br/>&ndash;&gt;-->
-    <!--                    <li>Visiting Researcher, University of Edinburgh, UK. 2020/July-Present.<br/>-->
-    <!--                </ul>-->
-    <!--            </div>-->
-    <!--        </div>-->
-    <!--    </section>-->
-
-
-    <section id="PUBLICATION">
-        <div class="page-header">
-            <h2>Publication
-                <small></small>
-            </h2>
-        </div>
-
-        <div class="row-fluid">
-            <div class="span10">
-
-                <!--<ul id="Tab" class="nav nav-pills">-->
-                <!--<li class="active"><a href="#PUB_DATE" date-toggle="Tab">Date</a></li>-->
-                <!--</ul>-->
-                <!--                *: Equal contribution.-->
-                <!--                †: Corresponding author.-->
-
-                <div id="TabContent" class="tab-content">
-                    <div class="tab-pane fade in active" id="topic">
-
-                        <h3>Recent highlights</h3>
-
-                        <span class='title'><strong><a
-                                href="https://arxiv.org/abs/2601.10497">MergeTune: Continued Fine-tuning of Vision-Language Models</a></strong></span> </a>
-                        <br>
-                        <span class="details">Wenqing Wang, Da Li*, Xiatian Zhu, Josef Kittler<br>
-                            <b>"When VLM finetuning meets model merging, a way to mitigate catastrophic forgetting."</b> <br>
-                            <i>Accepted in ICLR 2026</i></span>
-                        <br>
-                        <br>
-
-                        <span class='title'><strong><a
-                                href="https://arxiv.org/abs/2511.13035">One‑Step Generative Policies with Q‑Learning: A Reformulation of MeanFlow</a></strong></span> </a>
-                        <br>
-                        <span class="details">Zeyuan Wang, Da Li, Yulin Chen, Ye Shi, Liang Bai, Tianyuan Yu, Yanwei Fu <br>
-                            <b>"A single-step flow policy that works well with q-learning."</b> <br>
-                            <i>Accepted in AAAI 2026</i></span>
-                        <br>
-                        <br>
-
-                        <span class='title'><strong><a
-                                href="https://arxiv.org/abs/2508.04663">HierarchicalPrune: Position-Aware Compression for Large-Scale Diffusion Models</a></strong></span> </a>
-                        <br>
-                        <span class="details">Young D Kwon, Rui Li, Sijia Li, Da Li, Sourav Bhattacharya, Stylianos I Venieris<br>
-                            <b>"An effective structural pruning for large diffusion models."</b> <br>
-                            <i>Accepted in AAAI 2026</i></span>
-                        <br>
-                        <br>
-
-                        <span class='title'><strong><a
-                                href="https://openreview.net/forum?id=cBAKeZN3jy">TFAR: A Training-Free Framework for Autonomous Reliable Reasoning in Visual Question Answering</a></strong></span> </a>
-                        <br>
-                        <span class="details">Zhuo Zhi, Chen Feng, Adam Daneshmend, Mine Orlu, Andreas Demosthenous, Lu Yin, Da Li, Ziquan Liu, Miguel RD Rodrigues<br>
-                            <b>"A training-free tool calling framework for VQA."</b> <br>
-                            <i>Accepted in TMLR 2025</i></span>
-                        <br>
-                        <br>
-
-<!--                        <span class='title'><strong><a-->
-<!--                                href="">Neural Fine-tuning Search for Few-shot Learning</a></strong></span> </a>-->
-<!--                        <br>-->
-<!--                        <span class="details">P Eustratiadis, Ł Dudziak, D Li, T Hospedales<br>-->
-<!--                            <i>Accepted in ICLR 2024 as Oral</i></span>-->
-<!--                        <br>-->
-<!--                        <br>-->
-
-<!--                        <span class='title'><strong><a-->
-<!--                                href="">Better Practices for Domain Adaptation</a></strong></span> </a>-->
-<!--                        <br>-->
-<!--                        <span class="details">L Ericsson, D Li, T Hospedales<br>-->
-<!--                            <i>Accepted in AutoML 2023 winning a Best Paper Award</i></span>-->
-<!--                        <br>-->
-<!--                        </br>-->
-                        <!--                        </br>-->
-                        <!--                        </br>-->
-
-                        <!--                        <h3>Preprints</h3>-->
-                        <!--                        <span class='title'><strong><a-->
-                        <!--                                href="https://arxiv.org/abs/2010.08852">A Stochastic Neural Network for Attack-Agnostic Adversarial Robustness</a></strong></span> </a>-->
-                        <!--                        <br>-->
-                        <!--                        <span class="details">Panagiotis Eustratiadis, Henry Gouk, <b>Da Li</b> and Timothy Hospedales<br>-->
-                        <!--                                                                      </span>-->
-                        <!--                        <br>-->
-                        <!--                        </br>-->
-                        <!--                        </br>-->
-
-                        <!--                        <h3>2023</h3>-->
-
-                        <!--                        <span class='title'><strong><a-->
-                        <!--                                href="">Meta Omnium: A Benchmark for General-Purpose Learning-to-Learn</a></strong></span> </a>-->
-                        <!--                        <br>-->
-                        <!--                        <span class="details">Ondrej Bohdal*, Yinbing Tian*, Yongshuo Zong, Ruchika Chavhan, <b>Da Li</b>, Henry Gouk, Li Guo, Timothy Hospedales<br>-->
-                        <!--                                                                      <i>Accepted in CVPR 2023</i></span>-->
-                        <!--                        <br>-->
-                        <!--                        </br>-->
-                        <!--                        &lt;!&ndash;                        </br>&ndash;&gt;-->
-
-                        <!--                        <span class='title'><strong><a-->
-                        <!--                                href="">Zero-Shot Everything Sketch-Based Image Retrieval, and in Explainable Style</a></strong></span> </a>-->
-                        <!--                        <br>-->
-                        <!--                        <span class="details">Fengyin Lin*, Mingkang Li*, <b>Da Li</b>†, Timothy Hospedales, Yi-Zhe Song, Yonggang Qi<br>-->
-                        <!--                                                                      <i>Accepted in CVPR 2023 (Highlight)</i></span>-->
-                        <!--                        <br>-->
-                        <!--                        </br>-->
-                        <!--                        &lt;!&ndash;                        </br>&ndash;&gt;-->
-
-                        <!--                        <span class='title'><strong><a-->
-                        <!--                                href="">Domain Generalisation via Domain Adaptation: An Adversarial Fourier Amplitude Approach</a></strong></span> </a>-->
-                        <!--                        <br>-->
-                        <!--                        <span class="details">Minyoung Kim, <b>Da Li</b>, Timothy Hospedales<br>-->
-                        <!--                                                                      <i>Accepted in ICLR 2023</i></span>-->
-                        <!--                        <br>-->
-                        <!--                        </br>-->
-                        <!--                        &lt;!&ndash;                        </br>&ndash;&gt;-->
-
-                        <!--                        <span class='title'><strong><a-->
-                        <!--                                href="">SketchKnitter: Vectorized Sketch Generation with Diffusion Models</a></strong></span> </a>-->
-                        <!--                        <br>-->
-                        <!--                        <span class="details">Qiang Wang, Haoge Deng, Yonggang Qi, <b>Da Li</b>, Yi-Zhe Song<br>-->
-                        <!--                                                                      <i>Accepted in ICLR 2023 (Spotlight)</i></span>-->
-                        <!--                        <br>-->
-                        <!--                        </br>-->
-                        <!--                        &lt;!&ndash;                        </br>&ndash;&gt;-->
-
-
-                        <!--                        <h3>2022</h3>-->
-
-                        <!--                        <span class='title'><strong><a-->
-                        <!--                                href="">Learning to Augment via Implicit Differentiation for Domain Generalization</a></strong></span> </a>-->
-                        <!--                        <br>-->
-                        <!--                        <span class="details">T Wang, <b>D Li</b>, K Zhou, T Xiang, YZ Song<br>-->
-                        <!--                                                                      <i>Accepted in BMVC 2022 (Oral)</i></span>-->
-                        <!--                        <br>-->
-                        <!--                        </br>-->
-                        <!--                        &lt;!&ndash;                        </br>&ndash;&gt;-->
-
-                        <!--                        <span class='title'><strong><a-->
-                        <!--                                href="">Robust Target Training for Multi-Source Domain Adaptation</a></strong></span> </a>-->
-                        <!--                        <br>-->
-                        <!--                        <span class="details">Z Deng, <b>D Li</b>, YZ Song, T Xiang<br>-->
-                        <!--                                                                      <i>Accepted in BMVC 2022 (Oral)</i></span>-->
-                        <!--                        <br>-->
-                        <!--                        </br>-->
-                        <!--                        &lt;!&ndash;                        </br>&ndash;&gt;-->
-
-                        <!--                        <span class='title'><strong><a-->
-                        <!--                                href="">Dynamic instance domain adaptation</a></strong></span> </a>-->
-                        <!--                        <br>-->
-                        <!--                        <span class="details">Z Deng, K Zhou, <b>D Li</b>, J He, YZ Song, T Xiang<br>-->
-                        <!--                                                                      <i>Accepted in TIP</i></span>-->
-                        <!--                        <br>-->
-                        <!--                        </br>-->
-                        <!--                        &lt;!&ndash;                        </br>&ndash;&gt;-->
-
-
-                        <!--                        <span class='title'><strong><a-->
-                        <!--                                href="">Fisher sam: Information geometry and sharpness aware minimisation</a></strong></span> </a>-->
-                        <!--                        <br>-->
-                        <!--                        <span class="details">M Kim,  <b>D Li</b>, SX Hu, T Hospedales<br>-->
-                        <!--                                                                      <i>Accepted in ICML 2022</i></span>-->
-                        <!--                        <br>-->
-                        <!--                        </br>-->
-                        <!--                        &lt;!&ndash;                        </br>&ndash;&gt;-->
-
-                        <!--                        <span class='title'><strong><a-->
-                        <!--                                href="">Pushing the limits of simple pipelines for few-shot learning: External data and fine-tuning make a difference</a></strong></span> </a>-->
-                        <!--                        <br>-->
-                        <!--                        <span class="details">SX Hu, <b>D Li</b>, J Stühmer, M Kim, TM Hospedales<br>-->
-                        <!--                                                                      <i>Accepted in CVPR 2022</i></span>-->
-                        <!--                        <br>-->
-                        <!--                        </br>-->
-                        <!--                        &lt;!&ndash;                        </br>&ndash;&gt;-->
-
-
-                        <!--                        <h3>2021</h3>-->
-
-                        <!--                        <span class='title'><strong><a-->
-                        <!--                                href="">A channel coding benchmark for meta-learning</a></strong></span> </a>-->
-                        <!--                        <br>-->
-                        <!--                        <span class="details">R Li, O Bohdal, R Mishra, H Kim, <b>D Li</b>, N Lane, T Hospedales<br>-->
-                        <!--                                                                      <i>Accepted in NeurIPS 2021 Datasets and Benchmarks track</i></span>-->
-                        <!--                        <br>-->
-                        <!--                        </br>-->
-                        <!--                        &lt;!&ndash;                        </br>&ndash;&gt;-->
-
-                        <!--                        <span class='title'><strong><a-->
-                        <!--                                href="">A Simple Feature Augmentation for Domain Generalization</a></strong></span> </a>-->
-                        <!--                        <br>-->
-                        <!--                        <span class="details">Pan Li*, <b>Da Li*</b>, Wei Li, Shaogang Gong, Yanwei Fu and Timothy Hospedales<br>-->
-                        <!--                                                                      <i>Accepted in ICCV 2021</i></span>-->
-                        <!--                        <br>-->
-                        <!--                        </br>-->
-                        <!--                        &lt;!&ndash;                        </br>&ndash;&gt;-->
-
-
-                        <!--                        <span class='title'><strong><a-->
-                        <!--                                href="">Weight-Covariance Alignment for Adversarially Robust Neural Networks</a></strong></span> </a>-->
-                        <!--                        <br>-->
-                        <!--                        <span class="details">Panagiotis Eustratiadis, Henry Gouk, <b>Da Li</b>, Timothy Hospedales<br>-->
-                        <!--                                                                      <i>Accepted in ICML 2021</i></span>-->
-                        <!--                        <br>-->
-                        <!--                        </br>-->
-                        <!--                        &lt;!&ndash;                        </br>&ndash;&gt;-->
-
-                        <!--                        <span class='title'><strong><a-->
-                        <!--                                href="">Simple and Effective Stochastic Neural Networks</a></strong></span> </a>-->
-                        <!--                        <br>-->
-                        <!--                        <span class="details">Tianyuan Yu, Yongxin Yang, <b>Da Li</b>, Timothy Hospedales and Tao Xiang<br>-->
-                        <!--                                                                      <i>Accepted in AAAI 2021</i></span>-->
-                        <!--                        <br>-->
-                        <!--                        </br>-->
-                        <!--                        &lt;!&ndash;                        </br>&ndash;&gt;-->
-
-                        <!--                        <h3>2020</h3>-->
-
-                        <!--                        <span class='title'><strong><a-->
-                        <!--                                href="">Sketch-a-Segmenter: Sketch-based Photo Segmenter Generation</a></strong></span> </a>-->
-                        <!--                        <br>-->
-                        <!--                        <span class="details">Conghui Hu, <b>Da Li</b>, Yongxin Yang, Timothy Hospedales and Yi-Zhe Song<br>-->
-                        <!--                                                                      <i>Accepted in Transactions on Image Processing</i></span>-->
-                        <!--                        <br>-->
-                        <!--                        </br>-->
-                        <!--                        &lt;!&ndash;                        </br>&ndash;&gt;-->
-
-                        <!--                        <span class='title'><strong><a-->
-                        <!--                                href="">Sequential Learning for Domain Generalization</a></strong></span> </a>-->
-                        <!--                        <br>-->
-                        <!--                        <span class="details"><b>Da Li</b>, Yongxin Yang, Yi-Zhe Song and Timothy Hospedales<br>-->
-                        <!--                                                                      <i>Accepted in TASK-CV Workshop at ECCV 2020</i></span>-->
-                        <!--                        <br>-->
-                        <!--                        </br>-->
-                        <!--                        &lt;!&ndash;                        </br>&ndash;&gt;-->
-
-                        <!--                        <span class='title'><strong><a href="">Online Meta-Learning for Multi-Source and Semi-Supervised Domain Adaptation</a></strong></span> </a>-->
-                        <!--                        <br>-->
-                        <!--                        <span class="details"><b>Da Li</b>, Timothy Hospedales<br>-->
-                        <!--                                                                      <i>Accepted in ECCV 2020</i></span>-->
-                        <!--                        <br>-->
-                        <!--                        </br>-->
-                        <!--                        &lt;!&ndash;                        </br>&ndash;&gt;-->
-
-                        <!--                        <h3>2019</h3>-->
-                        <!--                        <span class='title'><strong><a href="">Robust Person Re-identification by Modelling Feature Uncertainty</a></strong></span> </a>-->
-                        <!--                        <br>-->
-                        <!--                        <span class="details"> Tianyuan Yu, <b>Da Li</b>, Yongxin Yang, Timothy Hospedales, Tao Xiang <br>-->
-                        <!--                                                                      <i>Accepted in ICCV 2019</i></span>-->
-                        <!--                        <br>-->
-                        <!--                        <a href="https://github.com/TianyuanYu/DistributionNet"><span class="label">Code</span></a><br>-->
-                        <!--                        </br>-->
-                        <!--                        &lt;!&ndash;                        </br>&ndash;&gt;-->
-
-                        <!--                        <span class='title'><strong><a-->
-                        <!--                                href="">Episodic training for domain generalization</a></strong></span> </a><br>-->
-                        <!--                        <span class="details"> <b>Da Li</b>, Jianshu Zhang, Yongxin Yang, Cong Liu, Yi-Zhe Song, Timothy M Hospedales <br>-->
-                        <!--                                                                      <i>Accepted as an <b>oral</b> in ICCV 2019</i></span>-->
-                        <!--                        <br>-->
-                        <!--                        <a href="https://github.com/HAHA-DL/Episodic-DG"><span class="label">Code</span></a><br>-->
-                        <!--                        </br>-->
-                        <!--                        &lt;!&ndash;                        </br>&ndash;&gt;-->
-
-                        <!--                        <h3>2018</h3>-->
-                        <!--                        <span class='title'><strong><a-->
-                        <!--                                href="">Deep factorised inverse-sketching</a></strong></span> </a>-->
-                        <!--                        <br>-->
-                        <!--                        <span class="details"> Kaiyue Pang, <b>Da Li</b>, Jifei Song, Yi-Zhe Song, Tao Xiang, Timothy M Hospedales <br>-->
-                        <!--                                                                      <i>Accepted in ECCV 2018</i></span>-->
-                        <!--                        <br>-->
-                        <!--                        </br>-->
-                        <!--                        &lt;!&ndash;                        </br>&ndash;&gt;-->
-
-                        <!--                        <span class='title'><strong><a-->
-                        <!--                                href="">Sketch-a-Classifier: Sketch-based Photo Classifier Generation</a></strong></span> </a>-->
-                        <!--                        <br>-->
-                        <!--                        <span class="details"> Conghui Hu, <b>Da Li</b>, Yi-Zhe Song, Tao Xiang, Tim Hospedales <br>-->
-                        <!--                                                                      <i>Accepted as a <b>spotlight</b> in Conference on Computer Vision and Pattern Recognition  (CVPR 2018)</i></span>-->
-                        <!--                        <br>-->
-                        <!--                        </br>-->
-
-
-                        <!--                        <span class='title'><strong><a-->
-                        <!--                                href="http://homepages.inf.ed.ac.uk/thospeda/papers/li2017metaDG.pdf">Learning to Generalize: Meta-Learning for Domain Generalization</a></strong></span> </a>-->
-                        <!--                        <br>-->
-                        <!--                        <span class="details"> <b>Da Li</b>, Yongxin Yang, Yi-Zhe Song and Timothy M. Hospedales <br>-->
-                        <!--                                                                      <i>Accepted in AAAI Conference on Artificial Intelligence (AAAI 2018)</i></span>-->
-                        <!--                        <br>-->
-                        <!--                        <a href="https://github.com/HAHA-DL/MLDG"><span class="label">Code</span></a><br>-->
-                        <!--                        </br>-->
-                        <!--                        &lt;!&ndash;                        </br>&ndash;&gt;-->
-
-                        <!--                        <h3>2017</h3>-->
-
-
-                        <!--                        <span class='title'><strong><a href="https://arxiv.org/abs/1710.03077">Deeper, Broader and Artier Domain Generalization</a></strong></span> </a>-->
-                        <!--                        <br>-->
-                        <!--                        <span class="details"> <b>Da Li</b>, Yongxin Yang, Yi-Zhe Song and Timothy M. Hospedales <br>-->
-                        <!--                                                                      <i>International Conference on Computer Vision (ICCV)</i>, 2017.</span>-->
-                        <!--                        <br>-->
-                        <!--                        &lt;!&ndash;<span class="links">&ndash;&gt;-->
-                        <!--                        <a href="project_iccv2017.html"><span class="label">Project</span></a><br>-->
-                        <!--                        &lt;!&ndash;</span>&ndash;&gt;-->
-                        <!--                        <br>-->
-                        <!--                        <span class='title'><strong><a-->
-                        <!--                                href="http://www.eecs.qmul.ac.uk/~ch304/project_page_bmvc2017.html">Now You See Me: Deep Face Hallucination for Unviewed Sketches</a></strong></span> </a>-->
-                        <!--                        <br>-->
-                        <!--                        <span class="details"> Conghui Hu, <b>Da Li</b>, Yi-Zhe Song and Timothy M. Hospedales <br>-->
-                        <!--                                                                      <i>British Machine Vision Conference (BMVC) &#45;&#45; <b>oral</b></i>, 2017.</span>-->
-
-
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-
-    <section id="SERVICES">
-        <div class="page-header">
-            <h2>Services
-                <small></small>
-            </h2>
-        </div>
-        <div class="row-fluid">
-
-            <p>
-                Reviewers: BMVC, NeurIPS, ICML, ICLR, CVPR, ICCV, ECCV, TPAMI, JMLR, IJCV, Machine Learning.
-            </p>
-
-            <p>
-                Senior Program Committee (SPC): AAAI 2022.
-            </p>
-
-            <p>
-                Area Chair: ICLR 2025, 2026.
-            </p>
-        </div>
-    </section>
-
-    <br>
-    <br>
-    <br>
-
-    <div>
-        <script type='text/javascript' id='clustrmaps'
-                src='//cdn.clustrmaps.com/map_v2.js?cl=ffffff&w=167&t=tt&d=qFvstbG0zvqKOeyZOqhp_n4fGTN8FfxkoWHj0iRWuM0'></script>
-
+    <div class="wechat-qr" id="wechat-qr">
+      <img src="wechat.jpg" alt="Da Li's WeChat QR code">
+      <span>Scan to connect with me on WeChat</span>
     </div>
-    <!--    <a href='https://clustrmaps.com/site/1b5h1'  title='Visit tracker'><img src='//clustrmaps.com/map_v2.png?cl=ffffff&w=a&t=tt&d=qFvstbG0zvqKOeyZOqhp_n4fGTN8FfxkoWHj0iRWuM0'/></a>-->
+  </div>
 
-</div> <!-- /container -->
+  <div class="intro-details">
+    <p class="highlight">
+      I welcome enquiries from motivated prospective PhD students,
+      visitors, and remote research interns interested in
+      embodied AI, world models, and multimodal learning.
+    </p>
 
+  </div>
+</header>
 
-<!-- Le javascript
-================================================== -->
-<!-- Placed at the end of the document so the pages load faster -->
-<!--<script src="css/bootstrap/css/js/jquery.js"></script>-->
-<!--<script src="css/bootstrap/css/js/bootstrap-transition.js"></script>-->
-<!--<script src="css/bootstrap/css/js/bootstrap-alert.js"></script>-->
-<!--<script src="css/bootstrap/css/js/bootstrap-modal.js"></script>-->
-<!--<script src="css/bootstrap/css/js/bootstrap-dropdown.js"></script>-->
-<!--<script src="css/bootstrap/css/js/bootstrap-scrollspy.js"></script>-->
-<!--<script src="css/bootstrap/css/js/bootstrap-tab.js"></script>-->
-<!--<script src="css/bootstrap/css/js/bootstrap-tooltip.js"></script>-->
-<!--<script src="css/bootstrap/css/js/bootstrap-popover.js"></script>-->
-<!--<script src="css/bootstrap/css/js/bootstrap-button.js"></script>-->
-<!--<script src="css/bootstrap/css/js/bootstrap-collapse.js"></script>-->
-<!--<script src="css/bootstrap/css/js/bootstrap-carousel.js"></script>-->
-<!--<script src="css/bootstrap/css/js/bootstrap-typeahead.js"></script>-->
+      <!-- EDIT RESEARCH INTERESTS HERE -->
+      <section id="research">
+        <h2>Research interests</h2>
+        <ul class="interest-list">
+          <li>
+            <strong>Embodied intelligence</strong>
+            <span>Robot learning and action policies.</span>
+          </li>
+          <li>
+            <strong>World models</strong>
+            <span>Predictive representations for physical reasoning and long-horizon planning.</span>
+          </li>
+          <li>
+            <strong>Multimodal intelligence</strong>
+            <span>Grounded reasoning, continual learning, and adaptation.</span>
+          </li>
+        </ul>
+      </section>
 
+      <!-- EDIT STUDENTSHIP CALLS HERE -->
+      <section id="studentships">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow"></p>
+            <h2>Funded PhD opportunities</h2>
+          </div>
+          <p>
+            I welcome early enquiries from prospective students whose interests
+            align with the research areas above.
+          </p>
+        </div>
+
+        <div class="opportunity-list">
+          <article class="opportunity">
+            <div class="opportunity-topline">
+              <h3>York-CSC PhD scholarships</h3>
+              <span>Chinese applicants</span>
+            </div>
+            <p>
+              The University of York and the China Scholarship Council offer
+              jointly funded PhD scholarships.
+            </p>
+            <p class="note">
+              The 2027 timetable has not yet been published. Please contact me
+              early with your CV, transcripts, and a short statement of research interests.
+            </p>
+            <div class="opportunity-links">
+              <a href="mailto:dali.academic@gmail.com?subject=York-CSC%20PhD%20enquiry%20for%202027">Email me</a>
+              <a href="https://www.york.ac.uk/study/postgraduate-research/funding/china-council-scholarships/" target="_blank" rel="noreferrer">Official CSC information ↗</a>
+            </div>
+          </article>
+
+          <article class="opportunity">
+            <div class="opportunity-topline">
+              <h3>SAINTS CDT studentships</h3>
+              <span>Safe AI</span>
+            </div>
+            <p>
+              SAINTS is York’s UKRI Centre for Doctoral Training in lifelong
+              safety assurance of AI-enabled autonomous systems. Relevant topics
+              include safe self-evolving embodied AI, uncertainty-aware world
+              models, and lifelong adaptation.
+            </p>
+            <p class="note">
+              Applications normally open between November and January. Students
+              interested in working with me are welcome to discuss research fit
+              before applying through the formal SAINTS process.
+            </p>
+            <div class="opportunity-links">
+              <a href="mailto:dali.academic@gmail.com?subject=SAINTS%20PhD%20enquiry%20for%202027">Email me</a>
+              <a href="https://www.york.ac.uk/study/postgraduate-research/centres-doctoral-training/safe-ai-training/safe-ai-phd/" target="_blank" rel="noreferrer">Official SAINTS information ↗</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- ADD NEW ITEMS AT THE TOP -->
+      <section id="news">
+        <h2>News</h2>
+        <ul class="news-list">
+          <li>
+            <time datetime="2026-09">Sep 2026</time>
+            <span>One paper on Mixture-of-Experts diffusion LLMs was accepted at NeurIPS 2026.</span>
+          </li>
+          <li>
+            <time datetime="2026-09">Sep 2026</time>
+            <span>Seeking prospective PhD students for 2027 entry through York-CSC and SAINTS.</span>
+          </li>
+
+        </ul>
+      </section>
+    </main>
+
+    <footer>
+      <span>© 2026 Da Li</span>
+      <a href="mailto:dali.academic@gmail.com">dali.academic@gmail.com</a>
+    </footer>
+  </div>
 </body>
 </html>

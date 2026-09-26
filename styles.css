@@ -1,0 +1,474 @@
+:root {
+  --ink: #1f2933;
+  --muted: #64727d;
+  --blue: #245d9c;
+  --line: #e2e7ea;
+  --soft: #f6f8fa;
+  --highlight: #f3f7fb;
+}
+
+/* Base */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: #fff;
+  color: var(--ink);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+a {
+  color: var(--blue);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.page {
+  width: min(1000px, calc(100% - 48px));
+  margin: 0 auto;
+}
+
+/* Navigation */
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 24px 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.name {
+  color: var(--ink);
+  font-weight: 700;
+}
+
+.nav-links {
+  display: flex;
+  gap: 24px;
+  font-size: 0.9rem;
+}
+
+.nav-links a {
+  color: var(--muted);
+}
+
+/* Typography */
+
+h1,
+h2 {
+  color: #16222b;
+  font-family: Georgia, "Times New Roman", serif;
+}
+
+h1 {
+  margin: 0 0 7px;
+  font-size: 2.7rem;
+  line-height: 1.1;
+}
+
+h2 {
+  margin: 0 0 22px;
+  font-size: 1.55rem;
+  font-weight: 600;
+}
+
+h3 {
+  margin: 0;
+  font-size: 1.02rem;
+}
+
+/* Introduction */
+
+.intro {
+  display: grid;
+  grid-template-columns: 210px minmax(0, 1fr);
+  column-gap: 32px;
+  row-gap: 20px;
+  align-items: start;
+  padding: 40px 0;
+}
+
+.profile-image {
+  display: block;
+  width: 210px;
+  height: 280px;
+  margin: 8px 0 0;
+  border-radius: 4px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.intro-copy {
+  min-width: 0;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.intro-details {
+  grid-column: 1 / -1;
+  min-width: 0;
+}
+
+.role {
+  margin: 0 0 14px;
+  color: var(--muted);
+  font-size: 1rem;
+}
+
+.intro-copy > p:not(.role) {
+  margin: 0 0 10px;
+}
+
+.intro-copy > p:last-child {
+  margin-bottom: 0;
+}
+
+/* Recruitment message */
+
+.highlight {
+  margin: 0;
+  padding: 14px 18px;
+  border-left: 4px solid #1e4778;
+  background: var(--highlight);
+  font-weight: 600;
+}
+
+/* Profile links */
+
+.profile-links {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+  margin-top: 16px;
+  font-size: 0.9rem;
+}
+
+.profile-links > a,
+.wechat-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 36px;
+  padding: 5px 13px;
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  background: #fff;
+  color: var(--blue);
+  font: inherit;
+  line-height: 1.4;
+  cursor: pointer;
+}
+
+.profile-links > a:hover,
+.wechat-button:hover {
+  background: var(--soft);
+  text-decoration: none;
+}
+
+/* WeChat QR code */
+
+.wechat-qr {
+  display: none;
+  width: 180px;
+  margin-top: 16px;
+  padding: 10px;
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  background: #fff;
+  text-align: center;
+}
+
+.wechat-qr.show {
+  display: block;
+}
+
+.wechat-qr img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.wechat-qr span {
+  display: block;
+  margin-top: 7px;
+  color: var(--muted);
+  font-size: 0.78rem;
+  line-height: 1.4;
+}
+
+/* Main sections */
+
+section {
+  padding: 38px 0;
+  border-top: 1px solid var(--line);
+}
+
+/* Research interests */
+
+.interest-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.interest-list strong,
+.interest-list span {
+  display: block;
+}
+
+.interest-list strong {
+  margin-bottom: 5px;
+}
+
+.interest-list span {
+  color: var(--muted);
+  font-size: 0.92rem;
+  line-height: 1.55;
+}
+
+/* Studentship heading */
+
+.section-heading {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: end;
+  margin-bottom: 26px;
+}
+
+.section-heading h2 {
+  margin-bottom: 0;
+}
+
+.section-heading > p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.94rem;
+}
+
+.eyebrow {
+  margin: 0 0 3px;
+  color: var(--blue);
+  font-size: 0.76rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+/* PhD opportunities */
+
+.opportunity-list {
+  display: grid;
+  gap: 14px;
+}
+
+.opportunity {
+  padding: 24px 26px;
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  background: #fff;
+}
+
+.opportunity-topline {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 10px;
+}
+
+.opportunity-topline span {
+  flex: none;
+  padding: 3px 9px;
+  border-radius: 999px;
+  background: var(--soft);
+  color: var(--muted);
+  font-size: 0.75rem;
+}
+
+.opportunity p {
+  margin: 0 0 10px;
+}
+
+.opportunity .note {
+  color: var(--muted);
+  font-size: 0.91rem;
+}
+
+.opportunity-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+  margin-top: 15px;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+/* News */
+
+.news-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.news-list li {
+  display: grid;
+  grid-template-columns: 105px minmax(0, 1fr);
+  gap: 18px;
+  margin-bottom: 12px;
+}
+
+.news-list time {
+  color: var(--muted);
+  font-size: 0.88rem;
+  font-variant-numeric: tabular-nums;
+}
+
+/* Footer */
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  padding: 28px 0 44px;
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+  font-size: 0.82rem;
+}
+
+footer a {
+  color: var(--muted);
+}
+
+/* Optional York affiliation/logo */
+
+.footer-affiliation {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.york-logo {
+  display: block;
+  width: 125px;
+  height: auto;
+}
+
+/* Tablet and mobile */
+
+@media (max-width: 680px) {
+  .page {
+    width: min(100% - 28px, 1000px);
+  }
+
+  nav {
+    align-items: flex-start;
+  }
+
+  .nav-links {
+    gap: 12px;
+    text-align: right;
+  }
+
+  .nav-links a:first-child {
+    display: none;
+  }
+
+  .intro {
+    grid-template-columns: 120px minmax(0, 1fr);
+    gap: 22px;
+    padding: 32px 0;
+  }
+
+  .profile-image {
+    width: 120px;
+    height: 145px;
+  }
+
+  h1 {
+    font-size: 2.2rem;
+  }
+
+  .role {
+    margin-bottom: 12px;
+    font-size: 0.9rem;
+    line-height: 1.5;
+  }
+
+  .interest-list,
+  .section-heading {
+    grid-template-columns: 1fr;
+    gap: 22px;
+  }
+
+  .opportunity-topline {
+    align-items: flex-start;
+  }
+
+  .news-list li {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  footer {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+}
+
+/* Small phones */
+
+@media (max-width: 520px) {
+  .intro {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .profile-image {
+    width: 150px;
+    height: 180px;
+  }
+
+  h1 {
+    font-size: 2.15rem;
+  }
+
+  .profile-links {
+    gap: 8px;
+  }
+
+  .profile-links > a,
+  .wechat-button {
+    padding: 5px 10px;
+  }
+
+  .opportunity {
+    padding: 20px;
+  }
+
+  .opportunity-topline {
+    flex-direction: column;
+    gap: 8px;
+  }
+}
